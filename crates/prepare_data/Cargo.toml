@@ -1,0 +1,17 @@
+[package]
+name = "prepare_data"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+glob = "0.3"
+anyhow = "1.0"
+pgn-reader = "0.25"
+shakmaty = "0.26"
+zstd = "0.13"
+game_data = { path = "../game_data"}
+move_mappings = { path = "../move_mappings"}
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"

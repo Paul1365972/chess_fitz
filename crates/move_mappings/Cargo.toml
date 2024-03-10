@@ -1,0 +1,17 @@
+[package]
+name = "move_mappings"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+game_data = { path = "../game_data"}
+shakmaty = "0.26"
+quickphf  = "*"
+
+[build-dependencies]
+game_data = { path = "../game_data"}
+shakmaty = "0.26"
+quickphf  = "*"
+quickphf_codegen = "*"

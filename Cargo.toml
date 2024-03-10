@@ -1,0 +1,18 @@
+[workspace]
+members = ["crates/prepare_data", "crates/game_data", "crates/move_mappings"]
+
+[package]
+name = "chess_fitz"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+shakmaty = "0.26"
+zstd = "0.13"
+game_data = { path = "crates/game_data"}
+move_mappings = { path = "crates/move_mappings"}
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
